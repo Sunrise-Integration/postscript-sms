@@ -16,7 +16,7 @@ export const StoryComponent: Story<Props> = ({ shopId }) => {
 
 StoryComponent.storyName = 'Script Generator'
 StoryComponent.args = {
-    shopId:  'shopId',
+    shopId:  '12345',
 }
 
 export default {
