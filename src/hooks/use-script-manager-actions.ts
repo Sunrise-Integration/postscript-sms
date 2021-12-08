@@ -2,10 +2,10 @@
 import { useEffect } from 'react'
 import manager from "../core/manager";
 
-export const useScriptManagerGenerator = (apiKey: string) => {
+export const useScriptManagerGenerator = (shopId: string) => {
     useEffect(() => {
 
-        manager.GenerateHeadScript(apiKey);
+        manager.GenerateHeadScript(shopId);
 
         return () => {
             manager.RemoveScript();
@@ -13,6 +13,6 @@ export const useScriptManagerGenerator = (apiKey: string) => {
             console.log('removing script');
         }
 
-    }, [apiKey]);
+    }, [shopId]);
 }
 
