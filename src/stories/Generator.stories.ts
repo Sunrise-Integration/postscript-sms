@@ -5,18 +5,18 @@ import {useScriptManagerGenerator} from "../hooks/use-script-manager-actions";
 
 
 interface Props {
-    apiKey: string
+    shopId: string
 }
 
-export const StoryComponent: Story<Props> = ({ apiKey }) => {
+export const StoryComponent: Story<Props> = ({ shopId }) => {
 
-    useScriptManagerGenerator(apiKey)
+    useScriptManagerGenerator(shopId)
     return React.createElement('div', {className: 'postscript-sms'});
 }
 
 StoryComponent.storyName = 'Script Generator'
 StoryComponent.args = {
-    apiKey:  'api-key-here',
+    shopId:  'shopId',
 }
 
 export default {
