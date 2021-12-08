@@ -1,0 +1,1 @@
+export  { useScriptManagerGenerator } from './hooks/use-script-manager-actions'
