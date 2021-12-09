@@ -2,7 +2,7 @@
 import { useEffect } from 'react'
 import manager from "../core/manager";
 
-export const useScriptManagerGenerator = (shopId: string) => {
+export const usePostscriptSms = (shopId: string) => {
     useEffect(() => {
 
         manager.GenerateHeadScript(shopId);

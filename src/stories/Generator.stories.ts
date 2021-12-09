@@ -1,7 +1,7 @@
 // @ts-ignore
 import React from 'react'
 import { Story } from '@storybook/react/types-6-0'
-import {useScriptManagerGenerator} from "../hooks/use-script-manager-actions";
+import {usePostscriptSms} from "../hooks/use-postscript-sms";
 
 
 interface Props {
@@ -10,11 +10,11 @@ interface Props {
 
 export const StoryComponent: Story<Props> = ({ shopId }) => {
 
-    useScriptManagerGenerator(shopId)
+    usePostscriptSms(shopId)
     return React.createElement('div', {className: 'postscript-sms'});
 }
 
-StoryComponent.storyName = 'Script Generator'
+StoryComponent.storyName = 'Postscript SMS'
 StoryComponent.args = {
     shopId:  '12345',
 }
