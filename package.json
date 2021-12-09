@@ -6,9 +6,9 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore '**/*.{ts,tsx}'",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --config jestconfig.json",
     "build": "tsc",
-    "storybook": "start-storybook -p 4006",
+    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "files": [
@@ -19,7 +19,7 @@
   "license": "MIT",
   "peerDependencies": {
     "@types/react": "^17.0.0",
-    "react": "^17.0.0",
+    "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
@@ -28,15 +28,14 @@
     "@storybook/addon-essentials": "^6.4.8",
     "@storybook/addon-links": "^6.4.8",
     "@storybook/react": "^6.4.8",
+    "@types/jest": "^27.0.3",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
     "babel-loader": "^8.2.3",
     "eslint": "^8.4.1",
     "eslint-config-google": "^0.14.0",
+    "jest": "^27.4.3",
+    "ts-jest": "^27.1.1",
     "typescript": "^4.5.2"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
   }
 }

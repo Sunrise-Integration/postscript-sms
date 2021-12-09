@@ -30,11 +30,11 @@ class Manager {
     }
 
     RemoveScript() {
-        if (this.headSmsScript !== null) {
+        if (this.headSmsScript !== null && document.head.contains(this.headSmsScript)) {
             document.head.removeChild(this.headSmsScript);
         }
 
-        if (this.bodySmsScript !== null) {
+        if (this.bodySmsScript !== null && document.body.contains(this.bodySmsScript)) {
             document.body.removeChild(this.bodySmsScript);
         }
     }
