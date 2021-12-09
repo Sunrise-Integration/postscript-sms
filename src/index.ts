@@ -1,1 +1,1 @@
-export  { useScriptManagerGenerator } from './hooks/use-script-manager-actions'
+export  { usePostscriptSms } from './hooks/use-postscript-sms'

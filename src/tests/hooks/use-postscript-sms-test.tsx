@@ -1,22 +1,23 @@
 // @ts-ignore
 import React from 'react'
 import { render } from '@testing-library/react'
-import {useScriptManagerGenerator} from "../../hooks/use-script-manager-actions";
+import {usePostscriptSms} from "../../hooks/use-postscript-sms";
 
 interface Props {
-    appKey: string
+    shopId: string
 }
 
-const Test: React.FC<Props> = ({ appKey }) => {
-    useScriptManagerGenerator(appKey);
+const TestRootComponent: React.FC<Props> = ({ shopId }) => {
+    usePostscriptSms(shopId);
     return null
 }
+
 describe('usePostscriptSms', () => {
 
     it('renders script', () => {
-        const appKey = '123'
+        const shopId = '123'
 
-        render(<Test appKey={appKey}/>);
+        render(<TestRootComponent shopId={shopId}/>);
 
         let scripts = document.getElementsByTagName("script");
 
