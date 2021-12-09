@@ -1,5 +1,5 @@
 {
-  "name": "@frontend-sdk/postscript-sms",
+  "name": "@sunrise-integration/postscript-sms",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -14,6 +14,10 @@
   "files": [
     "dist/**/*"
   ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
