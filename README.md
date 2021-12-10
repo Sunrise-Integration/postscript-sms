@@ -24,7 +24,7 @@ Postscript SMS integration for Shogun Frontend.
 
 ## Usage
 
-1. Find your Postscript Shop ID [here](https://app.postscript.io/account/settings)
+1. Find your Postscript Shop ID on your Postscript account's [Settings page](https://app.postscript.io/account/settings)
 
 2. Use `usePostscriptSms(shopId)` hook with your Postscript Shop ID as the first parameter to add Postscript functionality
 
@@ -36,3 +36,5 @@ const App = () => {
   return <>...</>
 }
 ```
+
+3. All Postscript functionality is handled through your Postscript dashboard
