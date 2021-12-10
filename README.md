@@ -1,6 +1,6 @@
 # Postscript SMS
 
-Postscript SMS integrated for Shogun Frontend.
+Postscript SMS integration for Shogun Frontend.
 
 > SMS marketing for growing Shopify stores
 
@@ -8,7 +8,7 @@ Postscript SMS integrated for Shogun Frontend.
   <tbody>
     <tr>
       <td>⚠️</td>
-      <td>This package runs on Shogun Frontend. </td>
+      <td>This package runs on Shogun Frontend and is in customer Beta. It might not currently support all ecommerce platforms or cover all use cases.</td>
     </tr>
   </tbody>
 </table>
@@ -24,22 +24,15 @@ Postscript SMS integrated for Shogun Frontend.
 
 ## Usage
 
-First we need to install the Postscript SMS script - we need to make a call to `usePostscriptSms` with a valid shopId (`00000`) :
+1. Find your Postscript Shop ID [here](https://app.postscript.io/account/settings)
+
+2. Use `usePostscriptSms` hook to add Postscript functionality
 
 ```jsx
 import { usePostscriptSms } from '@frontend-sdk/postscript-sms'
 
 const App = () => {
-
-    /**
-     * shopId: This ID is not your store name, but a numerical number. 
-     * You can locate your shop ID in your account settings.
-     * Select your Shop Name in the side menu of your Postscript dashboard, then select Settings.
-     * @type {string}
-     */
-    let shopId = '00000';
-    usePostscriptSms(shopId);
-    
-  return <div>...</div>
+  usePostscriptSms('00000');
+  return <>...</>
 }
 ```
